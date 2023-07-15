@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F8DF870-C243-4954-AACC-6ED94CBBB4CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ATM</RootNamespace>
+    <AssemblyName>ATM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAccDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAccDetails.Designer.cs">
+      <DependentUpon>AdminAccDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBillPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBillPayments.Designer.cs">
+      <DependentUpon>AdminBillPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDash.Designer.cs">
+      <DependentUpon>AdminDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEReceipts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEReceipts.Designer.cs">
+      <DependentUpon>AdminEReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFundTransfers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFundTransfers.Designer.cs">
+      <DependentUpon>AdminFundTransfers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminNearbyATMs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminNearbyATMs.Designer.cs">
+      <DependentUpon>AdminNearbyATMs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRecentTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRecentTransaction.Designer.cs">
+      <DependentUpon>AdminRecentTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePIN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangePIN.Designer.cs">
+      <DependentUpon>ChangePIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E-Receipts V.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E-Receipts V.Designer.cs">
+      <DependentUpon>E-Receipts V.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EReceipts1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EReceipts1.Designer.cs">
+      <DependentUpon>EReceipts1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NearbyATM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NearbyATM.Designer.cs">
+      <DependentUpon>NearbyATM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balance.Designer.cs">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillPayment.Designer.cs">
+      <DependentUpon>BillPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash.Designer.cs">
+      <DependentUpon>Dash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deposit.Designer.cs">
+      <DependentUpon>Deposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="electricity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="electricity.Designer.cs">
+      <DependentUpon>electricity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FastCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FastCash.Designer.cs">
+      <DependentUpon>FastCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FundTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FundTransfer.Designer.cs">
+      <DependentUpon>FundTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecentT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecentT.Designer.cs">
+      <DependentUpon>RecentT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="water.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="water.Designer.cs">
+      <DependentUpon>water.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Withdrawal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Withdrawal.Designer.cs">
+      <DependentUpon>Withdrawal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAccDetails.resx">
+      <DependentUpon>AdminAccDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminBillPayments.resx">
+      <DependentUpon>AdminBillPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDash.resx">
+      <DependentUpon>AdminDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEReceipts.resx">
+      <DependentUpon>AdminEReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFundTransfers.resx">
+      <DependentUpon>AdminFundTransfers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminNearbyATMs.resx">
+      <DependentUpon>AdminNearbyATMs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRecentTransaction.resx">
+      <DependentUpon>AdminRecentTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePIN.resx">
+      <DependentUpon>ChangePIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E-Receipts V.resx">
+      <DependentUpon>E-Receipts V.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EReceipts1.resx">
+      <DependentUpon>EReceipts1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NearbyATM.resx">
+      <DependentUpon>NearbyATM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balance.resx">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillPayment.resx">
+      <DependentUpon>BillPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash.resx">
+      <DependentUpon>Dash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deposit.resx">
+      <DependentUpon>Deposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="electricity.resx">
+      <DependentUpon>electricity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FastCash.resx">
+      <DependentUpon>FastCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FundTransfer.resx">
+      <DependentUpon>FundTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RecentT.resx">
+      <DependentUpon>RecentT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="water.resx">
+      <DependentUpon>water.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Withdrawal.resx">
+      <DependentUpon>Withdrawal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
